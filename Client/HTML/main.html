@@ -1,34 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <main>
-        <section class="user-container">
-            <div class="image-container"></div>
-            <div class="user-info">
-                <h2>users</h2>
-                <ul class="users-list"></ul>
-            </div>
+      <section class="user-container">
+        <div class="image-header-container">
+          <img src="../assets/Images/avatar.png" alt="" />
+        </div>
+        <h1>Joke & User</h1>
+        <div class="user-select-container">
+          <select name="users" id="users-select">
+            <option value="user">user</option>
+          </select>
+        </div>
+      </section>
 
-        </section>
+      <section class="joke-container">
+        <h2>Jokes</h2>
+        <ul class="jokes-list"></ul>
+      </section>
 
-        <section class="joke-container">
-            <h2>Jokes</h2>
-            <ul class="jokes-list"></ul>
-        </section>
-
-        <section class="add-joke"></section>
+      <section class="add-joke"></section>
     </main>
 
-
-
     <script src="controller.js" type="module"></script>
-</body>
-
+  </body>
 </html>
