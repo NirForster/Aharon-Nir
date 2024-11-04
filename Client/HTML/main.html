@@ -2,18 +2,22 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 
 <body>
     <main>
         <section class="user-container">
-            <div class="image-container"></div>
-            <div class="user-info">
-                <h2>users</h2>
-                <ul class="users-list"></ul>
+            <div class="image-header-container">
+                <img src="../assets/Images/avatar.png" alt="" />
+            </div>
+            <h1>Joke & User</h1>
+            <div class="user-select-container">
+                <select name="users" id="users-select">
+                    <option value="user">user</option>
+                </select>
             </div>
         </section>
 
@@ -22,18 +26,7 @@
             <ul class="jokes-list"></ul>
         </section>
 
-        <section class="add-joke">
-            <!-- add to form action the backend endpoint url -->
-            <form action="" method="post">
-                <label for="joke">Joke:</label>
-                <input type="text" id="joke" name="joke">
-
-                <label for="punchline">Punchline:</label>
-                <input type="text" id="punchline" name="punchline">
-                <!-- add either front end or backend id to the form and change button to submit -->
-                <button type="button">Submit Joke</button>
-            </form>
-        </section>
+        <section class="add-joke"></section>
     </main>
 
     <script src="controller.js" type="module"></script>
