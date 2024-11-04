@@ -26,7 +26,18 @@
             <ul class="jokes-list"></ul>
         </section>
 
-        <section class="add-joke"></section>
+        <section class="add-joke">
+            <!-- add to form action the backend endpoint url -->
+            <form action="" method="post">
+                <label for="joke">Joke:</label>
+                <input type="text" id="joke" name="joke">
+
+                <label for="punchline">Punchline:</label>
+                <input type="text" id="punchline" name="punchline">
+                <!-- add either front end or backend id to the form and change button to submit -->
+                <button type="button">Submit Joke</button>
+            </form>
+        </section>
     </main>
 
     <script src="controller.js" type="module"></script>
