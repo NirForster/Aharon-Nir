@@ -1,4 +1,5 @@
-[
+
+export default [
   {
     content: "Why did the bicycle fall over? It was two-tired!",
     category: "Pun",
@@ -38,3 +39,4 @@
     user: "645c1eab57f9bc7e8f9b9012",
   },
 ];
+
