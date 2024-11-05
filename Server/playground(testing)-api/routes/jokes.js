@@ -10,7 +10,7 @@ import {
 const router = express.Router();
 
 router.get("/all", getAllJokes);
-router.post("/", createJoke);
+router.post("/add", createJoke);
 router.patch("/:id", updateJoke);
 router.delete("/:id", deleteJoke);
 router.get("/:id", getJokeWithUser);
