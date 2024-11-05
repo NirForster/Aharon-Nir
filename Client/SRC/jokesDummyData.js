@@ -1,5 +1,3 @@
-
-export default [
 const jokesDummyDataJson = [
   {
     content: "Why did the bicycle fall over? It was two-tired!",
@@ -47,7 +45,4 @@ const jokesDummyDataJson = [
   },
 ];
 
-<<<<<<< HEAD
-=======
 export default jokesDummyDataJson;
->>>>>>> 3e1eefaa255873e740a34326dc781e780071f5c3

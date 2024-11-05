@@ -1,51 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../CSS/main.css" />
     <link rel="stylesheet" href="../CSS/headerAndUserSelector.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <main>
-        <section class="user-container">
-            <div class="image-container">
-                <img class="avatar-img" src="../assets/Images/avatarCropped.png" alt="Laughing Avatar" />
-            </div>
-            <div class="header-select-container">
-                <h1>Joke & User</h1>
-                <select name="users" id="users-select">
-                    <!-- Options go here -->
-                </select>
-            </div>
-        </section>
+      <section class="user-container">
+        <div class="image-container">
+          <img
+            class="avatar-img"
+            src="../assets/Images/avatarCropped.png"
+            alt="Laughing Avatar"
+          />
+        </div>
+        <div class="header-select-container">
+          <h1>Joke & User</h1>
+          <select name="users" id="users-select">
+            <!-- Options go here -->
+          </select>
+        </div>
+      </section>
 
-        <section class="joke-container">
-            <h2>Jokes</h2>
-            <div class="jokes-list-container">
-                <ul class="jokes-list"></ul>
-            </div>
-        </section>
+      <section class="joke-container">
+        <h2>Jokes</h2>
+        <div class="jokes-list-container">
+          <ul class="jokes-list"></ul>
+        </div>
+      </section>
 
-        <section class="add-joke">
-            <h2>Add Joke</h2>
-            <!-- add to form action the backend endpoint url -->
-            <form action="" method="post">
-                <label for="joke">Joke:</label>
-                <input type="text" id="joke" name="joke" />
+      <section class="add-joke">
+        <h2>Add Joke</h2>
+        <!-- add to form action the backend endpoint url -->
+        <form action="" method="post">
+          <label for="joke">Joke:</label>
+          <input type="text" id="joke" name="joke" />
 
-                <label for="punchline">Punchline:</label>
-                <input type="text" id="punchline" name="punchline" />
-                <!-- add either front end or backend id to the form and change button to submit -->
-                <button type="button">Submit Joke</button>
-            </form>
-        </section>
+          <label for="punchline">Punchline:</label>
+          <input type="text" id="punchline" name="punchline" />
+          <!-- add either front end or backend id to the form and change button to submit -->
+          <button type="button">Submit Joke</button>
+        </form>
+      </section>
     </main>
 
     <script src="../SRC/main.js" type="module"></script>
-</body>
-
+  </body>
 </html>

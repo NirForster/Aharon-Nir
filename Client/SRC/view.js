@@ -1,4 +1,8 @@
-function renderJokes(filteredJokes) {
+// handle direct DOM manipulation
+import jokesDummyDataJson from "../SRC/jokesDummyData.js";
+
+const usersArr = jokesDummyDataJson;
+export function renderJokes(filteredJokes) {
   document.querySelector(".jokes-list").innerHTML = "";
   filteredJokes.forEach((joke) => {
     const jokeCard = document.createElement("li");
@@ -36,10 +40,8 @@ function renderJokes(filteredJokes) {
     buttonContainer.append(editButton, deleteButton);
     jokeCard.append(joke, punchline, buttonContainer);
     document.querySelector(".jokes-list").append(jokeCard);
-// handle direct DOM manipulation
-import jokesDummyDataJson from "../SRC/jokesDummyData.js";
-
-const usersArr = jokesDummyDataJson;
+  });
+}
 
 // Function to create the <select> element with options for each user
 export function createSelectEl() {
