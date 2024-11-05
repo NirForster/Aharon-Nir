@@ -6,7 +6,6 @@ import morgan from "morgan";
 // Routes Import
 import jokesRoutes from "./routes/jokes.js";
 import usersRoutes from "./routes/users.js";
-import productsRoutes from "./routes/products.js";
 
 dotenv.config();
 const app = express();
@@ -22,7 +21,6 @@ app.use(morgan("tiny"));
 
 app.use("/jokes", jokesRoutes);
 app.use("/users", usersRoutes);
-app.use("/products", productsRoutes);
 
 const PORT = process.env.PORT || 3000;
 
