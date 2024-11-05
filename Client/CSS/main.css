@@ -1,0 +1,45 @@
+:root {
+  /* Primary Colors */
+  --primary-color: #4caf50; /* A fresh, modern green */
+  --primary-dark: #388e3c; /* A darker shade for hover states */
+  --primary-light: #c8e6c9; /* A lighter shade for backgrounds */
+
+  /* Secondary Colors */
+  --secondary-color: #ff5722; /* A vibrant orange for accents */
+  --secondary-dark: #e64a19; /* A darker orange for active elements */
+  --secondary-light: #ffccbc; /* A lighter shade for subtle accents */
+
+  /* Neutral Colors */
+  --background-color: #f5f5f5; /* A clean, light gray for main backgrounds */
+  --surface-color: #ffffff; /* White for card backgrounds or containers */
+  --text-color: #333333; /* A dark gray for text for readability */
+  --text-muted: #757575; /* A lighter gray for secondary text */
+
+  /* Accent Colors */
+  --accent-color: #ffc107; /* A warm yellow for highlighting */
+  --accent-dark: #ffa000; /* Darker yellow for contrast */
+  --accent-light: #ffecb3; /* Light yellow for background accents */
+
+  /* Success, Warning, and Error Colors */
+  --success-color: #4caf50; /* Green for success messages */
+  --warning-color: #ff9800; /* Orange for warning messages */
+  --error-color: #f44336; /* Red for error messages */
+
+  /* Shadows */
+  --shadow-color: rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+html {
+  height: 100vh;
+  font-size: 62.5%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}

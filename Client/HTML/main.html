@@ -2,21 +2,23 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="../CSS/main.css" />
+    <link rel="stylesheet" href="../CSS/headerAndUserSelector.css" />
 </head>
 
 <body>
     <main>
         <section class="user-container">
-            <div class="image-header-container">
-                <img src="../assets/Images/avatar.png" alt="" />
+            <div class="image-container">
+                <img class="avatar-img" src="../assets/Images/avatarCropped.png" alt="Laughing Avatar" />
             </div>
-            <h1>Joke & User</h1>
-            <div class="user-select-container">
+            <div class="header-select-container">
+                <h1>Joke & User</h1>
                 <select name="users" id="users-select">
-                    <option value="user">user</option>
+                    <!-- Options go here -->
                 </select>
             </div>
         </section>
@@ -33,17 +35,17 @@
             <!-- add to form action the backend endpoint url -->
             <form action="" method="post">
                 <label for="joke">Joke:</label>
-                <input type="text" id="joke" name="joke">
+                <input type="text" id="joke" name="joke" />
 
                 <label for="punchline">Punchline:</label>
-                <input type="text" id="punchline" name="punchline">
+                <input type="text" id="punchline" name="punchline" />
                 <!-- add either front end or backend id to the form and change button to submit -->
                 <button type="button">Submit Joke</button>
             </form>
         </section>
     </main>
 
-    <script src="controller.js" type="module"></script>
+    <script src="../SRC/main.js" type="module"></script>
 </body>
 
 </html>
